@@ -1,0 +1,22 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$dark: black;
+
+#NB {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+  transition: background-color 0.5s ease-in;
+  img {
+    object-fit: contain;
+  }
+}
+.nav__black {
+  background-color: black;
+}
+.nav__transparent {
+  background-color: transparent;
+}
