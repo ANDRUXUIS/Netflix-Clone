@@ -201,6 +201,10 @@
           box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: black;

@@ -7,8 +7,6 @@ import { randomGenerator } from "../utils/randomGenerator";
 
 function MovieMain(props) {
   const [movie, setMovie] = useState([]);
-  const [unChangeAble] = useState(true);
-
   useEffect(() => {
     async function fetchdata() {
       try {
@@ -17,11 +15,11 @@ function MovieMain(props) {
         const { results } = data;
         setMovie(results[randomGenerator(results.length)]);
       } catch (error) {
-        console.log(error);
+          console.log(error);
       }
     }
     fetchdata();
-  }, [unChangeAble]);
+  }, []);
   return (
     <div>
       <div className="mainscene-info">
